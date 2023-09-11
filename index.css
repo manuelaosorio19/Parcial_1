@@ -76,6 +76,34 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+       .card{
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    background-color: lightblue;
+    justify-content: space-around; 
+    align-items: center;
+    
+    
+
+    
+}
+ .card-body{
+    height: 100%;
+ padding-right: 10%;
+ background-color: lightblue;
+
+}
+.card-title{
+    font-size: 2rem;
+    text-align: center;
+}
+ .card img{
+    padding: 2%;
+    width: 100%;
+    height:100%;
+    
+}
 }
 
 section {
