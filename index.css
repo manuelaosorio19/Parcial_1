@@ -13,6 +13,7 @@
 
 body {
     min-width: 100vw;
+    background-color: var(--background-principal);
 }
 
 .header {
@@ -20,10 +21,11 @@ body {
     top: 0;
     display: flex;
     width: 100%;
+
     justify-content: space-between; 
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 0 0.5rem 0 2rem;
+    background-color:rgb(129, 145, 175);
+    padding: 1 0.5rem 0 2rem;
     height: 20%;
 }
 
@@ -41,11 +43,17 @@ body {
     display: flex;
     align-items:center;
     justify-content:space-around;
-    width: 20%;
+    width: 30%;
     height: 50%;
 }
 
+a:link {text-decoration: none }
+
+
+
 button{
+    align-items: center;
+    background-color: transparent;
     width: fit-content;
     height: fit-content;
 
@@ -56,8 +64,9 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     width: 20%;
-    height: 50%;
+    height: 50%;    
     border-radius: 50%;
+    color: black;
 }
  .header .logo{
     width: 20%;
@@ -65,65 +74,44 @@ button{
 }
 
 .boton {
-    height: 5rem;
-    width: 5rem;
+    height:3rem;
+    width: 7rem;
+   
 }
 .boton .imgboton {
     height: 100%;
     width: 100%;
 }
 .botones {
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-       .card{
-    height:100%;
-    width: 100%;
-    justify-content: center;
-    background-color: lightblue;
-    justify-content: space-around; 
-    align-items: center;
-    
-    
+    justify-content: space-around;
+    align-items: center;}
 
-    
-}
- .card-body{
-    height: 100%;
- padding-right: 10%;
- background-color: lightblue;
+ 
 
-}
-.card-title{
-    font-size: 2rem;
-    text-align: center;
-}
- .card img{
-    padding: 2%;
-    width: 100%;
-    height:100%;
-    
-}
-}
 
 section {
     display: flex;
     justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--background-principal);
+    padding-bottom: 15%;
 }
 .whatsapp {
     
     position: fixed;
-    bottom: 5rem;
-    right: 5rem;
+    bottom: 0;
+    right: 0;
     height: 5rem;
     width: 5rem;
 }
 
 .contenedor-texto {
+
+    margin-top: 20%;
     width: 40%;
     color: var(--color-letra);
 }
@@ -134,13 +122,18 @@ section {
     align-items: center;
     flex-direction: column;
 }
+.contenedor-texto2{
+    margin-top: 30%;
+  }
+  
 
 .contenedor-texto h2 {
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 600; /*Que tanta negrilla se quiere*/
 }
 
 .seccion-uno img {
+    margin-top: 20%;
     border-radius: 50%;
     height: 50%;
     border: 0px solid rgb(20, 67, 73);
@@ -155,8 +148,8 @@ section {
     position: relative;
     display: flex;
     border: 5px solid rgb(207,209,214);
-    width: 25%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 1px;
@@ -169,7 +162,7 @@ section {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-color: rgb(84, 108, 153);
     border-radius: 1rem 1rem 0 0;
 }
@@ -204,4 +197,105 @@ section {
 {
     box-shadow: 0 0 2rem black;
     cursor: pointer;
+}
+
+
+.autos{
+  
+    text-align: center;
+    
+    font-size: 4rem;
+    font-weight: 100; /*Que tanta negrilla se quiere*/
+  }
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+      margin: 0 auto;
+    }
+  
+  .wrapper > div {
+     
+      border-radius: 5px;
+      padding: auto;
+  
+    
+   
+    }
+    
+    .wrapper {
+      display: grid;   
+      grid-auto-rows: minmax(100%, auto);
+    }
+    .one {
+      grid-column: 1 / 1;
+    
+    }
+    .two {
+      grid-column: 2 / 2;
+    
+    }
+      .three {
+        grid-column: 3/3;
+      
+      }
+      .four {
+        grid-column: 1/1;
+        grid-row: 2;
+      }
+    .five {
+      grid-column: 2/2;
+      grid-row: 2;
+    }
+    .six {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  
+    .card{
+      height:100%;
+      width: 100%;
+      justify-content: center;
+      background-color:var(--background-principal);
+      justify-content: space-around; 
+      align-items: center;
+      
+      
+  
+      
+  }
+  .card-body{
+    width: 100%;
+      height: 100%;
+   padding-right: 10%;
+   background-color:
+   var(--background-principal);
+  
+  }
+  .card-title{
+      font-size: 2rem;
+      text-align: center;
+  }
+   .card img{
+     
+      width: 100%;
+      height:60%;
+      align-items: center;
+      
+   
+    }
+
+footer{
+    
+    position: absolute; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
+     width: 100vw;
+    background-color: var(--background-principal);
+     
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
 }

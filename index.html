@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial_1</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
 </head>
 <body>
     <header class="header">
@@ -15,10 +16,10 @@
                 <p>Manuela Osorio Monsalve</p>
             </div>
             <div class="botones">
-                <button class="boton">Home</button>
-                <button class="boton">Servicios</button>
-                <button class="boton">Colaboradores</button>
-                <button class="boton"><img class="imgboton" src="imagenes/flecha.png" alt=""></button>
+              <a href="#seccion-uno"><button class="boton">Home</button></a>
+              <a href="#seccion-dos"><button class="boton">Servicios</button></a>
+              <a href="#seccion-tres"> <button class="boton">Colaboradores</button></a>
+              <a href="#footer"><button class="boton"><img class="imgboton" src="imagenes/flecha.png" alt=""></button></a> 
             </div>
 
         </nav>
@@ -26,7 +27,7 @@
     </header>
     <a href=" https://wa.me/1234"><button><img class="whatsapp" src="imagenes/whatsapp.png" alt=""></button>
     </a>
-    <section class="seccion-uno">
+    <section id="seccion-uno" class="seccion-uno">
         <div class="contenedor-texto">
             <h2>DESCUBRE EL BMW</h2>
             <p>
@@ -44,69 +45,78 @@
 
     </section>
 
-    <section class="seccion-dos">
-    <div class="card" >
-                <img class="" src="imagenes/bmw1.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    BMW M240i Coupé Premium 2023
-                  </h5>
-                  <p class="card-text">El vehículo Coupé por su parte, 
-                  proviene de la palabra francesa couper que significa cortar. 
-                  Su carrocería proviene de 2 mitades que al unirlas, forman una apariencia única. 
-                  La primera mitad incluye capó y motor y la segunda el espacio
-                  del conductor y pasajero junto al maletero.
-                  </p>
-                  <a href="https://bmwshop.autogermana.com.co/bmw-m240i-coupe-premium-2023/p" class="btn btn-primary" target="_blank">Saber mas...
-                  </a>
+    <h2   id="seccion-dos" class="autos">Modelos</h2>
+
+    <section   class="seccion-dos">
+              <div class="wrapper">
+                <div class="one">
+                  <div class="card" >
+                    <img class="" src="imagenes/bmw1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        BMW M240i Coupé Premium 2023
+                      </h5>
+                      <p class="card-text">El vehículo Coupé por su parte, 
+                      proviene de la palabra francesa couper que significa cortar. 
+                      Su carrocería proviene de 2 mitades que al unirlas, forman una apariencia única. 
+                      La primera mitad incluye capó y motor y la segunda el espacio
+                      del conductor y pasajero junto al maletero.
+                      </p>
+                      <a href="https://bmwshop.autogermana.com.co/bmw-m240i-coupe-premium-2023/p" class="btn btn-primary" target="_blank">Saber mas...
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-    
-              <div class="card" >
-                <img class="" src="imagenes/bmw2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">
-                   BMW Z4 M40i Premium 2023
-                  </h5>
-                  <p class="card-text">Control dinámico de estabilidad (DSC) con contenido ampliado
-                  Diferencial de bloqueo electrónico
-                  Freno de estacionamiento electromecánico
-                  Sistema antibloqueo de los frenos (ABS).</p>
-                  <a href="https://bmwshop.autogermana.com.co/z4-z4-m40i-premium-2023/p" class="btn btn-primary"  target="_blank" >Saber mas...</a>
+
+                <div class="two">
+                  <div class="card" >
+                    <img class="" src="imagenes/bmw2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                       BMW Z4 M40i Premium 2023
+                      </h5>
+                      <p class="card-text">Control dinámico de estabilidad (DSC) con contenido ampliado
+                      Diferencial de bloqueo electrónico
+                      Freno de estacionamiento electromecánico
+                      Sistema antibloqueo de los frenos (ABS).</p>
+                      <a href="https://bmwshop.autogermana.com.co/z4-z4-m40i-premium-2023/p" class="btn btn-primary"  target="_blank" >Saber mas...</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-    
-              <div class="card" >
-                <img class="" src="imagenes/bmw4.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    BMW X3 M40i Premium 2023
-                  </h5>
-                  <p class="card-text">A la hora de mantener al X3 como un líder en su segmento, 
-                  BMW ha tenido que esforzarse a fondo para hacer que supere a sus rivales directos. 
-                  Para ello, ha tenido que desarrollar una gama nueva de motores lo suficientemente
-                  potentes y eficientes para poder impulsar a este coche.</p>
-                  <a href="https://bmwshop.autogermana.com.co/bmw-x3-m40i-premium-2023/p" class="btn btn-primary" target="_blank" >Saber mas...
-                  </a>
+                <div class="three">
+                  <div class="card" >
+                    <img class="" src="imagenes/bmw4.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        BMW X3 M40i Premium 2023
+                      </h5>
+                      <p class="card-text">A la hora de mantener al X3 como un líder en su segmento, 
+                      BMW ha tenido que esforzarse a fondo para hacer que supere a sus rivales directos. 
+                      Para ello, ha tenido que desarrollar una gama nueva de motores lo suficientemente
+                      potentes y eficientes para poder impulsar a este coche.</p>
+                      <a href="https://bmwshop.autogermana.com.co/bmw-x3-m40i-premium-2023/p" class="btn btn-primary" target="_blank" >Saber mas...
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-          
-        </section>
-        <section >
-              <div class="card" >
-                <img class="" src="imagenes/bmw3.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    BMW Serie 8 Coupé M
-                  </h5>
-                  <p class="card-text">Automóviles representan el pináculo del lujo de conducir: 
-                  una elegante traducción de genes M para usar a diario, tanto en la carretera 
-                  como en el circuito. Disponible en tres variantes: el BMW M850i xDrive Coupé 
-                  ofrece una síntesis excepcional de comodidad, prestaciones y eficiencia. </p>
-                  <a href="https://www.bmw.com.co/es/all-models/m-series/m8-coupe/2019/bmw-m8-coupe-descubre.html" class="btn btn-primary" target="_blank">Saber mas...
-                  </a>
+                <div class="four">
+                  <div class="card" >
+                    <img class="" src="imagenes/bmw3.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        BMW Serie 8 Coupé M
+                      </h5>
+                      <p class="card-text">Automóviles representan el pináculo del lujo de conducir: 
+                      una elegante traducción de genes M para usar a diario, tanto en la carretera 
+                      como en el circuito. Disponible en tres variantes: el BMW M850i xDrive Coupé 
+                      ofrece una síntesis excepcional de comodidad, prestaciones y eficiencia. </p>
+                      <a href="https://www.bmw.com.co/es/all-models/m-series/m8-coupe/2019/bmw-m8-coupe-descubre.html" class="btn btn-primary" target="_blank">Saber mas...
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="five">
+                  
               <div class="card" >
                 <img class="" src="imagenes/bmw5.png" alt="Card image cap">
                 <div class="card-body">
@@ -121,27 +131,37 @@
                   <a href="https://bmwshop.autogermana.com.co/bmw-m240i-coupe-premium-2023/p" class="btn btn-primary" target="_blank">Saber mas...</a>
                 </div>
               </div>
-              <div class="card" >
-                <img class="" src="imagenes/bmw6.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    BMW SERIE 8 CONVERTIBLE
-                  </h5>
-                  <p class="card-text">El BMW Serie 8 Convertible inspira con toda la 
-                  gama de elementos de dinámica y la agilidad de un vehículo deportivo 
-                  ambicioso. El motor de gasolina de ocho cilindros BMW TwinPower 
-                  Turbo de alto rendimiento</p>
-                  <a href="https://www.bmw.com.co/es/all-models/8-series/convertible/2018/bmw-serie-8-convertible-informacion.html#tab-0" class="btn btn-primary" target="_blank">Saber mas...
-                  </a>
+                </div>
+                <div class="six">
+                  <div class="card" >
+                    <img class="" src="imagenes/bmw6.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        BMW SERIE 8 CONVERTIBLE
+                      </h5>
+                      <p class="card-text">El BMW Serie 8 Convertible inspira con toda la 
+                      gama de elementos de dinámica y la agilidad de un vehículo deportivo 
+                      ambicioso. El motor de gasolina de ocho cilindros BMW TwinPower 
+                      Turbo de alto rendimiento</p>
+                      <a href="https://www.bmw.com.co/es/all-models/8-series/convertible/2018/bmw-serie-8-convertible-informacion.html#tab-0" class="btn btn-primary" target="_blank">Saber mas...
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-        
+
+       
     </section>
 
-    <section class="seccion-tres">
+    
+
+
+
+
+    <section id="seccion-tres" class="seccion-tres">
 
         <div class="contenedor-texto2">
-            <h2>SERVICIOS</h2>
+            <h2>Colaboradores</h2>
             <div class="contenedor-colaboradores">  
                 <div class="contenedor-principal">
                     <div class="img-user">
@@ -169,5 +189,16 @@
         </div>
         
     </section>
+
+
+    
+
+    <footer id="footer">
+
+      <div class="footer">
+          <div  id="copyright">Copyright&copy; 2008 - Página creada por Manuela Osorio Monsalve</div>
+         <a href="#seccion-uno"><img src="imagenes/flechaup.png" alt=""></a>
+  </div>
+  </footer>
 </body>
 </html>
