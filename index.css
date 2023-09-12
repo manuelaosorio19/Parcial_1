@@ -37,7 +37,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background-color: rgb(129, 145, 175);
+    background-color: rgb(128, 145, 175);
 }
 .navbar .botones {
     display: flex;
