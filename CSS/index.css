@@ -32,7 +32,7 @@ body {
 .header .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    justify-content: space-around; 
     align-items: center;
     height: 100%;
     width: 100%;
@@ -93,7 +93,7 @@ button{
 
 section {
     display: flex;
-    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    justify-content: space-around; 
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -109,47 +109,133 @@ section {
     width: 5rem;
 }
 
-.contenedor-texto {
-
-    margin-top: 20%;
-    width: 40%;
-    color: var(--color-letra);
-}
-
-.contenedor-texto2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.contenedor-texto2{
-    margin-top: 30%;
-  }
-  
-
-.contenedor-texto h2 {
-    font-size: 5rem;
-    font-weight: 600; /*Que tanta negrilla se quiere*/
-}
-
 .seccion-uno img {
     margin-top: 20%;
     border-radius: 50%;
     height: 50%;
     border: 0px solid rgb(20, 67, 73);
 }
-.contenedor-colaboradores{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+
+
+.link img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.link:hover
+{
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
 }
 
+
+.autos{
+  
+    text-align: center;
+    
+    font-size: 4rem;
+    font-weight: 100; 
+  }
+  
+    .card{
+      height: 50%;
+      width: 30%;
+      justify-content: center;
+      background-color:var(--background-principal);
+      justify-content: space-around; 
+      align-items: center;
+      
+  }
+  .card-body{
+    width: 100%;
+      height: 100%;
+   padding-right: 10%;
+   background-color:
+   var(--background-principal);
+  
+  }
+  .card-title{
+      font-size: 2rem;
+      text-align: center;
+  }
+   .card img{
+     
+      width: 60%;
+      height:50%;
+      align-items: center;
+      
+   
+    }
+
+footer{
+    
+    position: absolute; 
+     width: 100vw;
+    background-color: var(--background-principal);
+     
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }  
+
+#seccion-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 3rem;
+}
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.contenedor-servicios .servicio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    row-gap: 3rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+#seccion-tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 3rem;
+}
+.contenedor-colaborador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+.contenedor-texto2{
+    margin-top: 20%;
+}
 .contenedor-principal {
     position: relative;
     display: flex;
     border: 5px solid rgb(207,209,214);
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 60%;
     justify-content: center;
     align-items: center;
     padding-top: 1px;
@@ -185,117 +271,8 @@ section {
 
 }
 .contenedor-texto2 h2 {
-    font-size: 2rem;
-    font-weight: 100; /*Que tanta negrilla se quiere*/
-}
-.link img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.link:hover
-{
-    box-shadow: 0 0 2rem black;
-    cursor: pointer;
-}
-
-
-.autos{
-  
     text-align: center;
-    
-    font-size: 4rem;
-    font-weight: 100; /*Que tanta negrilla se quiere*/
-  }
-
-.wrapper {
-    width: 100%;
-    height: 100%;
-      margin: 0 auto;
-    }
-  
-  .wrapper > div {
-     
-      border-radius: 5px;
-      padding: auto;
-  
-    
-   
-    }
-    
-    .wrapper {
-      display: grid;   
-      grid-auto-rows: minmax(100%, auto);
-    }
-    .one {
-      grid-column: 1 / 1;
-    
-    }
-    .two {
-      grid-column: 2 / 2;
-    
-    }
-      .three {
-        grid-column: 3/3;
-      
-      }
-      .four {
-        grid-column: 1/1;
-        grid-row: 2;
-      }
-    .five {
-      grid-column: 2/2;
-      grid-row: 2;
-    }
-    .six {
-      grid-column: 3;
-      grid-row: 2;
-    }
-  
-    .card{
-      height:100%;
-      width: 100%;
-      justify-content: center;
-      background-color:var(--background-principal);
-      justify-content: space-around; 
-      align-items: center;
-      
-      
-  
-      
-  }
-  .card-body{
-    width: 100%;
-      height: 100%;
-   padding-right: 10%;
-   background-color:
-   var(--background-principal);
-  
-  }
-  .card-title{
-      font-size: 2rem;
-      text-align: center;
-  }
-   .card img{
-     
-      width: 100%;
-      height:60%;
-      align-items: center;
-      
-   
-    }
-
-footer{
-    
-    position: absolute; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
-     width: 100vw;
-    background-color: var(--background-principal);
-     
-  }
-  .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
+    font-size: 2rem;
+    font-weight: 100; 
 }
+
